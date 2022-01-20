@@ -1,5 +1,5 @@
 SET ExtensionName=ce_loyalty
-SET ConfCode=êéáç
+SET ConfCode=RETAIL
 SET ConfVer=2003009
 SET CompVer=80312
 
