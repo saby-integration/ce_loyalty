@@ -1,0 +1,6 @@
+[submodule "src/BlocklyExecutor"]
+	path = src/BlocklyExecutor
+	url = https://github.com/saby-integration/vo3_83_uf.git
+[submodule "src/BlocklySabyBlocks"]
+	path = src/BlocklySabyBlocks
+	url = https://github.com/saby-integration/vo3_83_uf.git
