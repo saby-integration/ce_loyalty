@@ -1,0 +1,8 @@
+SET ExtensionName=Loyalty
+SET ConfCode=Retail23
+SET ConfVer=2003009
+SET CompVer=80314
+
+cd ../..
+v8unpack.exe -E bin\%ExtensionName%.%ConfCode%.%ConfVer%.cfe src\%ConfCode% --index cmd\%ConfCode%\index.%ConfVer%.json
+pause

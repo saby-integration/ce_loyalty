@@ -1,0 +1,187 @@
+{
+  "Catalog": {
+    "БазовыеЕдиницыИзмерения": {
+      "Catalog.json": ""
+    },
+    "КассыККМ": {
+      "Catalog.json": ""
+    },
+    "Контрагенты": {
+      "Catalog.json": ""
+    },
+    "Магазины": {
+      "Catalog.json": ""
+    },
+    "Номенклатура": {
+      "Catalog.json": ""
+    },
+    "Организации": {
+      "Catalog.json": ""
+    },
+    "ПодключаемоеОборудование": {
+      "Catalog.json": ""
+    },
+    "РабочиеМеста": {
+      "Catalog.json": ""
+    },
+    "Склады": {
+      "Catalog.json": ""
+    },
+    "ТоварныеГруппы": {
+      "Catalog.json": ""
+    },
+    "УпаковкиНоменклатуры": {
+      "Catalog.json": ""
+    },
+    "ФизическиеЛица": {
+      "Catalog.json": ""
+    },
+    "ХарактеристикиНоменклатуры": {
+      "Catalog.json": ""
+    }
+  },
+  "ChartOfCharacteristicTypes": {
+    "ДополнительныеРеквизитыИСведения.json": ""
+  },
+  "CommonCommand": {
+    "Saby_ОткрытьФормуНастроек.json": "..\\base\\CommonCommand\\Saby_ОткрытьФормуНастроек.json",
+    "Saby_ОткрытьФормуНастроек.obj.1c": "..\\base\\CommonCommand\\Saby_ОткрытьФормуНастроек.obj.1c"
+  },
+  "CommonForms": {
+    "Saby_Blockly": {
+      "Form.form803.json": "..\\base\\CommonForms\\Saby_Blockly\\Form.form803.json",
+      "Form.json": "..\\base\\CommonForms\\Saby_Blockly\\Form.json",
+      "Form.obj.1c": "..\\base\\CommonForms\\Saby_Blockly\\Form.obj.1c"
+    },
+    "Saby_Настройки": {
+      "Form.form803.json": "..\\base\\CommonForms\\Saby_Настройки\\Form.form803.json",
+      "Form.json": "..\\base\\CommonForms\\Saby_Настройки\\Form.json",
+      "Form.obj.1c": "..\\base\\CommonForms\\Saby_Настройки\\Form.obj.1c"
+    },
+    "Saby_ПоискДисконтнойКарты": {
+      "Form.form803.json": "..\\base\\CommonForms\\Saby_ПоискДисконтнойКарты\\Form.form803.json",
+      "Form.json": "..\\base\\CommonForms\\Saby_ПоискДисконтнойКарты\\Form.json",
+      "Form.obj.1c": "..\\base\\CommonForms\\Saby_ПоискДисконтнойКарты\\Form.obj.1c"
+    }
+  },
+  "CommonModules": {
+    "Saby_HTTP": {
+      "CommonModules.json": "..\\base\\CommonModules\\Saby_HTTP\\CommonModules.json",
+      "CommonModules.obj.1c": "..\\base\\CommonModules\\Saby_HTTP\\CommonModules.obj.1c"
+    },
+    "Saby_СвойстваИДопРеквизиты_Сервер": {
+      "CommonModules.json": "..\\base\\CommonModules\\Saby_СвойстваИДопРеквизиты_Сервер\\CommonModules.json",
+      "CommonModules.obj.1c": "..\\base\\CommonModules\\Saby_СвойстваИДопРеквизиты_Сервер\\CommonModules.obj.1c"
+    },
+    "Saby_Сервисы_Клиент": {
+      "CommonModules.json": "..\\base\\CommonModules\\Saby_Сервисы_Клиент\\CommonModules.json",
+      "CommonModules.obj.1c": "..\\base\\CommonModules\\Saby_Сервисы_Клиент\\CommonModules.obj.1c"
+    },
+    "Saby_Сервисы_Сервер": {
+      "CommonModules.json": "..\\base\\CommonModules\\Saby_Сервисы_Сервер\\CommonModules.json",
+      "CommonModules.obj.1c": "..\\base\\CommonModules\\Saby_Сервисы_Сервер\\CommonModules.obj.1c"
+    },
+    "МенеджерОборудованияКлиент": {
+      "CommonModules.json": "",
+      "CommonModules.obj.1c": ""
+    },
+    "ОборудованиеЧекопечатающиеУстройстваВызовСервера": {
+      "CommonModules.json": "",
+      "CommonModules.obj.1c": ""
+    },
+    "Saby_Сервисы_СерверПодКонфигурацию": {
+      "CommonModules.json": "",
+      "CommonModules.obj.1c": ""
+    }
+  },
+  "CommonPicture": {
+    "МаркируемаяАлкогольнаяПродукцияШапкаТЧ.json": "",
+    "РМК_Enter.json": "",
+    "РМК_Стереть.json": "",
+    "РМК_Цифра0.json": "",
+    "РМК_Цифра1.json": "",
+    "РМК_Цифра2.json": "",
+    "РМК_Цифра3.json": "",
+    "РМК_Цифра4.json": "",
+    "РМК_Цифра5.json": "",
+    "РМК_Цифра6.json": "",
+    "РМК_Цифра7.json": "",
+    "РМК_Цифра8.json": "",
+    "РМК_Цифра9.json": "",
+    "СерииНоменклатурыКолонкаСтатусов.json": "",
+    "СправкаПоАкселераторам.json": "",
+    "СтатусыУказанияСерий.json": ""
+  },
+  "ConfigurationExtension.json": "",
+  "Constants": {
+    "ИспользоватьАвтоматическиеСкидкиВПродажах.json": "",
+    "ИспользоватьОплатуБанковскимиКредитами.json": "",
+    "ИспользоватьОплатуПлатежнымиКартами.json": "",
+    "ИспользоватьПодключаемоеОборудование.json": "",
+    "ИспользоватьРасчетыСКлиентами.json": "",
+    "ИспользоватьРучныеСкидкиВПродажах.json": "",
+    "ИспользоватьСерииНоменклатуры.json": ""
+  },
+  "DataProcessor": {
+    "РМКУправляемыйРежим": {
+      "DataProcessor.json": "",
+      "Form": {
+        "Форма": {
+          "Form.form803.json": "",
+          "Form.json": "",
+          "Form.obj.1c": ""
+        }
+      }
+    }
+  },
+  "DefinedType": {
+    "КассаБПО.json": "",
+    "ОрганизацияБПО.json": ""
+  },
+  "Documents": {
+    "КассоваяСмена": {
+      "Documents.json": ""
+    },
+    "ЧекККМ": {
+      "Documents.json": ""
+    }
+  },
+  "Enums": {
+    "ВидыОперацийЧекККМ.json": "..\\base\\Enums\\ВидыОперацийЧекККМ.json",
+    "СтавкиНДС.json": "..\\base\\Enums\\СтавкиНДС.json",
+    "СтатусыКассовойСмены.json": "..\\base\\Enums\\СтатусыКассовойСмены.json",
+    "СтатусыЧековККМ.json": "..\\base\\Enums\\СтатусыЧековККМ.json",
+    "ТипыНоменклатуры.json": "..\\base\\Enums\\ТипыНоменклатуры.json",
+    "ТипыОплатЧекаККМ.json": "..\\base\\Enums\\ТипыОплатЧекаККМ.json",
+    "ТипыПодключаемогоОборудования.json": "..\\base\\Enums\\ТипыПодключаемогоОборудования.json",
+    "ТипыСистемНалогообложенияККТ.json": "..\\base\\Enums\\ТипыСистемНалогообложенияККТ.json",
+    "ХозяйственныеОперации.json": "..\\base\\Enums\\ХозяйственныеОперации.json"
+  },
+  "FunctionalOption": {
+    "ИспользоватьАвтоматическиеСкидкиВПродажах.json": "",
+    "ИспользоватьОплатуБанковскимиКредитами.json": "",
+    "ИспользоватьОплатуПлатежнымиКартами.json": "",
+    "ИспользоватьПодключаемоеОборудование.json": "",
+    "ИспользоватьРасчетыСКлиентами.json": "",
+    "ИспользоватьРучныеСкидкиВПродажах.json": "",
+    "ИспользоватьСерииНоменклатуры.json": ""
+  },
+  "InformationRegister": {
+    "Saby_ОчередьЧеков.json": "..\\base\\InformationRegister\\Saby_ОчередьЧеков.json",
+    "ДополнительныеСведения.json": "..\\base\\InformationRegister\\ДополнительныеСведения.json",
+    "ПрименениеСистемНалогообложения.json": "..\\base\\InformationRegister\\ПрименениеСистемНалогообложения.json"
+  },
+  "Language": {
+    "Русский.json": ""
+  },
+  "StyleItems": {
+    "ВыборСтандартногоПериодаФонКнопки.json": "",
+    "ЦветТекстаОтмененнойСтрокиДокумента.json": ""
+  },
+  "Subsystem": {
+    "Администрирование": {
+      "Subsystem.json": ""
+    }
+  },
+  "ОборудованиеЧекопечатающиеУстройстваВызовСервера.1c": "base\\ОборудованиеЧекопечатающиеУстройстваВызовСервера.1c"
+}

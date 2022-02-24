@@ -1,0 +1,316 @@
+
+Функция local_helper_exec_method(context_params, __kwargs = Неопределено) Экспорт 
+	Перем headers, params, response_type, url, type_request, request_body_type, data;
+	kwargs = __kwargs;
+	params = Новый Структура;
+	Если kwargs = Неопределено Тогда
+		kwargs = Новый Структура;
+	КонецЕсли;
+	Если Не kwargs.Свойство("body_type", request_body_type) Тогда
+		//Тип того, как отдаём тело запроса
+		request_body_type = "json";
+	КонецЕсли;
+	Если Не kwargs.Свойство("response", response_type) Тогда
+		//То, что ожидается в ответе
+		response_type = "json";
+	КонецЕсли;
+	Попытка
+		Если	Не	context_params.Свойство("session")
+			И		kwargs.Свойство("auto_auth")
+			И		kwargs.auto_auth Тогда
+			local_helper_auth_by_login(context_params);
+		КонецЕсли;
+		
+		Если Не kwargs.Свойство("headers", headers) Тогда
+			headers = Новый Соответствие;
+		КонецЕсли;
+		
+		Если request_body_type = "json" Тогда
+			Если headers.Получить("Content-Type") = Неопределено Тогда
+				//headers.Вставить("Content-Type", "application/xml");
+				headers.Вставить("Content-Type", "application/json; charset=utf-8");
+			КонецЕсли;
+			Если kwargs.Свойство("method") Тогда
+				data = Новый Структура(
+				"jsonrpc,	id,	method",
+				"2.0",		1,	kwargs.method);
+				headers.Вставить("Content-Type", "application/json-rpc;charset=utf-8");
+				Если kwargs.Свойство("params") Тогда
+					data.Вставить("params", kwargs.params);
+				КонецЕсли;
+				Если kwargs.Свойство("protocol") Тогда
+					data.Вставить("protocol", kwargs.protocol);
+				КонецЕсли;
+				data = encode_xdto_json(data);
+				params = Новый Структура;
+			Иначе
+				Если Не kwargs.Свойство("params", params) Тогда
+					params = Новый Структура;
+				КонецЕсли;
+			КонецЕсли;			
+		Иначе
+			//ВызватьИсключение ЗначениеВСтрокуВнутр(ExtException( Новый Структура("message, detail", "Неизвестный тип отправки запроса.", request_body_type), ));
+		КонецЕсли;
+		Если Не kwargs.Свойство("url", url) Тогда
+			url = context_params.api_url + "/service/?srv=1";
+		КонецЕсли;
+		Если Не kwargs.Свойство("type", type_request) Тогда
+			type_request = "post";
+		КонецЕсли;
+		local_helper_add_auth_header(context_params, headers);
+		code_result = local_helper_exec_request(type_request, url, response_type, Новый Структура("params, data, headers", params, data, headers));
+		Если code_result.code = 401 Тогда
+			Если	kwargs.Свойство("auto_auth")
+				И	kwargs.auto_auth Тогда
+				local_helper_auth_by_login(context_params);
+				local_helper_add_auth_header(context_params, headers);			
+				code_result = local_helper_exec_request(type_request, url, response_type, Новый Структура("params, data, headers", params, data, headers));
+			КонецЕсли;
+		КонецЕсли;
+		Если code_result.code = 401 Тогда
+			//ВызватьИсключение ЗначениеВСтрокуВнутр(ExtException( Новый Структура("message, detail", "Ошибка авторизации", ""), ));
+		ИначеЕсли	code_result.result.Получить("error") <> Неопределено
+			И	(	code_result.code = 500
+			Или	code_result.code = 501
+			Или	code_result.code = 404
+			Или	code_result.code = 200) Тогда
+			_details = Неопределено;
+			msg = code_result.result["error"]["message"];
+			_details	= code_result.result["error"].Получить("details");
+			Если	(_details <> Неопределено) И	(msg <> _details) Тогда
+				msg = msg + ?(Не ПустаяСтрока(msg), " ", "") + _details;
+			КонецЕсли;
+			//ВызватьИсключение ЗначениеВСтрокуВнутр(ExtException( Новый Структура("message, detail", "Внешняя ошибка", msg), ));
+		ИначеЕсли Не code_result.code = 200 Тогда
+			//ВызватьИсключение ЗначениеВСтрокуВнутр(ExtException( Новый Структура("message, detail", "Неизвестная ошибка", "Код ошибки: " + code_result.code), ));
+		КонецЕсли;
+	Исключение
+		Возврат Неопределено;
+		//ИнфОбОшибке = ИнформацияОбОшибке();
+		//ВызватьИсключение ИнфОбОшибке.Описание;
+	КонецПопытки;
+	Возврат code_result.result;
+КонецФункции
+
+//Выполнение POST/GET запроса
+Функция local_helper_exec_request(request_type, request_url, response_type, __kwargs = Неопределено)
+	kwargs = __kwargs;
+	Если kwargs = Неопределено Тогда
+		kwargs = Новый Структура;
+	КонецЕсли;
+	resp_result = Новый Структура("code, result");	
+	Если		request_type = "post" Тогда
+		response = session_post(request_url, kwargs);
+		resp_result.code = response.status;
+		Если		response.status = 200 Тогда
+			resp_result.result = response_handler(response_type, response.response);
+		ИначеЕсли	response.status = 404
+			Или	response.status = 500
+			Или	response.status = 501 Тогда
+			resp_result.result = response_handler("json", response.response);
+		ИначеЕсли	response.status = 401 Тогда
+			resp_result.result = response.response;
+		Иначе
+			//ВызватьИсключение ЗначениеВСтрокуВнутр(ExtException( Новый Структура("message, detail", "Неизвестный код ответа post-запроса.", response.response), ));		
+		КонецЕсли;
+	ИначеЕсли	request_type = "get" Тогда
+		resp_result = session_get(request_url, kwargs);
+		//resp_result = response.Файл;
+		//response = response.Результат;
+		//resp_result.code = response.status;
+		//Если		response.status = 200 Тогда
+		//	resp_result.result = response_handler(response_type, response.response);
+		//ИначеЕсли	response.status = 401 Тогда
+		//	resp_result.result = response.response;
+		//Иначе
+		//	ВызватьИсключение ЗначениеВСтрокуВнутр(ExtException( Новый Структура("message, detail", "Неизвестный код ответа get-запроса.", response.response), ));		
+		//КонецЕсли;
+	Иначе
+		//ВызватьИсключение ЗначениеВСтрокуВнутр(ExtException( Новый Структура("message, detail", "Неизвестный тип HTTP запроса.", request_type), ));		
+	КонецЕсли;
+	Возврат resp_result;
+КонецФункции
+
+Функция session_get(request_url, kwargs)
+	//Надо дойти досюда, чтобы получить параметры для реализации get запроса.
+	//ВызватьИсключение ЗначениеВСтрокуВнутр(ExtException( Новый Структура("message, detail", "Если видим это, то надо реализовать session_get.", "get:" + url), ));			
+	Хост = Сред(request_url, 9);
+	Слэш = Найти(Хост,"/"); //19
+	Хост = Сред(Хост, 0, Слэш-1);
+	Соединение = Новый HTTPСоединение(
+	    Хост, // сервер (хост)
+	    , // порт, по умолчанию для http используется 80, для https 443
+	    , // пользователь для доступа к серверу (если он есть)
+	    , // пароль для доступа к серверу (если он есть)
+	    , // здесь указывается прокси, если он есть
+	    , // таймаут в секундах, 0 или пусто - не устанавливать
+	   Новый ЗащищенноеСоединениеOpenSSL()
+	);
+	Запрос = Новый HTTPЗапрос(Прав(request_url, СтрДлина(request_url) - 8 - СтрДлина(Хост)), kwargs.headers);
+	
+	Файл	= ПолучитьИмяВременногоФайла("pdf"); //подика угадай тип файла
+	Результат = Соединение.Получить(Запрос, Файл);
+	ПроверкаФайл = Новый Файл(Файл);
+	
+	//Попытки пока не надоест!!!!, крутимся пока сервис не отдаст файл, ну не может он так быстро за один присест отдать его
+	Счет = 1;
+	Пока Счет = 1000 или Результат.КодСостояния = 500 Цикл
+		Результат = Соединение.Получить(Запрос, Файл);
+		ПроверкаФайл = Новый Файл(Файл);
+		Счет = Счет + 1;
+	КонецЦикла;
+	
+	Возврат Новый ДвоичныеДанные(Файл);
+КонецФункции
+
+//обработка результата
+Функция response_handler(response_type, response)
+	Если		response_type = "json" Тогда
+		ЧтениеJSON = Новый ЧтениеJSON;
+		ЧтениеJSON.УстановитьСтроку(response);
+		Попытка
+			СтрокаВСоответсвие	= ПрочитатьJSON(ЧтениеJSON, Истина); //Для просмотра в отладке
+			Возврат СтрокаВСоответсвие;
+		Исключение
+			//ИнфоОбОшибке = ИнформацияОбОшибке();
+			//ВызватьИсключение NewExtException(ИнфоОбОшибке, "Ошибка чтения JSON");
+		КонецПопытки;
+	ИначеЕсли	response_type = "binary" Тогда
+		//Заглушка
+		//ВызватьИсключение ЗначениеВСтрокуВнутр(ExtException( Новый Структура("message, detail", "Неизвестный тип HTTP ответа", response_type), ));		
+	ИначеЕсли	response_type = "text" Тогда
+		//Заглушка
+		//ВызватьИсключение ЗначениеВСтрокуВнутр(ExtException( Новый Структура("message, detail", "Неизвестный тип HTTP ответа", response_type), ));		
+	Иначе
+		//ВызватьИсключение ЗначениеВСтрокуВнутр(ExtException( Новый Структура("message, detail", "Неизвестный тип HTTP ответа", response_type), ));		
+	КонецЕсли;
+КонецФункции
+
+//post запрос
+//Для 8.2 тут будет падать. Заменить через вычислить
+//Начиная с 8.3 HTTPСоединение возвращает ответ сразу, а не кладёт в файл, появляется объект HTTPЗапрос
+//Начиная с 8.2.16 появляется ЗащищенноеСоединениеOpenSSL
+Функция session_post(url, kwargs)
+	Перем port, ossl_connection, proxy, proxy_param, headers;
+	url_splited = СтрЗаменить(url, "://", Символы.ПС);
+	Если СтрЧислоСтрок(url_splited) = 1 Тогда
+		//Возможно localhost
+	КонецЕсли;
+	protocol	= СтрПолучитьСтроку(url_splited, 1);
+	url_short	= СтрПолучитьСтроку(url_splited, 2);
+	server		= СтрЗаменить(Сред(url_short,1,Найти(url_short, "/")-1), ":", Символы.ПС);
+	Если СтрДлина(server) = 2 Тогда
+		port	= СтрПолучитьСтроку(server, 2);
+		server	= СтрПолучитьСтроку(server, 1);
+		resource= СтрЗаменить(url_short, server + ":" + Формат(protocol,"ЧГ=0"), "");
+	Иначе
+		resource= СтрЗаменить(url_short, server, "");
+	КонецЕсли;
+	Если protocol = "https" Тогда
+		ossl_connection = Новый ЗащищенноеСоединениеOpenSSL();
+	КонецЕсли;
+	Если kwargs.Свойство("proxy", proxy_param) Тогда
+		proxy = Новый ИнтернетПрокси;
+		proxy.Установить(proxy_param.protocol, proxy_param.server, Число(proxy_param.port), proxy_param.user, proxy_param.password);
+	КонецЕсли;
+	Если Не kwargs.Свойство("headers", headers) Тогда
+		headers = Новый Соответствие;
+	КонецЕсли;
+	
+	Попытка
+		http_connection = Новый HTTPСоединение(server, port,,,proxy,,ossl_connection);
+		http_request	= Новый HTTPЗапрос(resource, headers);
+		http_request.УстановитьТелоИзСтроки(kwargs.data, "UTF-8");
+	Исключение
+		//ВызватьИсключение ЗначениеВСтрокуВнутр(ExtException( Новый Структура("message, detail", "Ошибка создания HTTP запроса.", ОписаниеОшибки()), ));
+	КонецПопытки;
+	
+	http_result = Новый Структура("status, response");
+	Попытка
+		http_response	= http_connection.ОтправитьДляОбработки(http_request);
+		http_result.status = http_response.КодСостояния;
+	Исключение
+		ВызватьИсключение "Произошла ошибка при отпарвке запроса в СБИС";
+	КонецПопытки;
+	http_result.response = http_response.ПолучитьТелоКакСтроку("UTF-8");
+	Возврат http_result;
+КонецФункции
+
+Функция local_helper_auth_by_login(context_params, __kwargs = Неопределено) Экспорт
+	Попытка
+		params = Новый Структура("Логин, Пароль", context_params.login, context_params.password);
+		url = context_params.api_url + "/auth/service/";
+		result = local_helper_exec_method(context_params, Новый Структура("url, method, params, auto_auth", url, "СБИС.Аутентифицировать", params, Ложь));
+	Исключение
+		ИнфОбОшибке = ИнформацияОбОшибке();
+		//ВызватьИсключение(NewExtException(ИнфОбОшибке));		
+	КонецПопытки;
+	context_params.Вставить("session", Неопределено);
+	Если ТипЗнч(result) = Тип("Соответствие") Тогда
+		context_params.Вставить("session", result.Получить("result"));
+	КонецЕсли;
+	Возврат context_params.session;
+КонецФункции
+
+//Дополняет заголовки сессией
+//context - Структура
+//headers - Соответствие
+Функция local_helper_add_auth_header(context_params, headers)
+	Перем session;
+	Если Не context_params.Свойство("session", session) Тогда
+		session = "";
+	КонецЕсли;
+	headers.Вставить("X-SBISSessionID", session);
+	
+КонецФункции
+
+Функция ПоискОшибокСериализации( Знч, Реквищзит, п3, Отмена ) Экспорт 
+	//Функция удаляет все не сериализуемые реквизиты из структуры
+	Возврат Неопределено;
+КонецФункции
+
+Функция encode_xdto_json(ОбъектДляСериализации)
+	ЗаписьJSON = Новый ЗаписьJSON;
+	ПараметрыЗаписиJSON = Новый ПараметрыЗаписиJSON(ПереносСтрокJSON.Нет);
+	ЗаписьJSON.УстановитьСтроку(ПараметрыЗаписиJSON);
+	//ЗаписьJSON.УстановитьСтроку();
+	ЗаписатьJSON(ЗаписьJSON,ОбъектДляСериализации,,"ПоискОшибокСериализации", Saby_HTTP);
+	Возврат ЗаписьJSON.Закрыть();	
+КонецФункции
+
+Функция ПолучитьConnection( context_params, Отказ) Экспорт
+	
+	Отказ = Ложь;
+	Если Отказ Тогда 
+		Возврат Не Отказ;
+	КонецЕсли;
+	
+	ДопПараметрыЗапроса	= Новый Структура;
+	
+	ИнформацияОКонфигурации = Saby_Сервисы_Сервер.ЗаполнитьПараметрыСистемыНаСервере();
+	ПараметрыМетода = Новый Структура("Format, Uid, SubsystemVersion, InstanceUid",
+		"Com1C82",
+		ИнформацияОКонфигурации.Конфигурация.Имя,
+		ИнформацияОКонфигурации.Конфигурация.Версия,
+		Saby_Сервисы_Сервер.ПолучитьУидБазыданных()
+	);
+	
+	context_params.Вставить("api_service", "/integration_config/service/");
+	Коннекшин = Saby_HTTP.local_helper_exec_method(
+		context_params,
+		Новый Структура("url, method, params, auto_auth",
+			context_params.api_url+context_params.api_service,
+			"API3.ReadConnection",
+			ПараметрыМетода,
+			Истина,
+		)
+	);
+	Если Не Отказ И ТипЗнч(Коннекшин) = Тип("Соответствие") И ТипЗнч(Коннекшин["result"]) = Тип("Соответствие") Тогда
+		context_params.Вставить("ConnectionId", Коннекшин["result"]["id"]);
+	КонецЕсли;
+	//context_params.Вставить("ConnectionId",	"a2d0e291-569d-4fdc-8bed-f468b161b434"); //Test-Online
+	//context_params.Вставить("ConnectionId",	"26973f55-101c-4a97-875f-79adeb85abe3"); //Oleg Local
+	
+	Возврат Не Отказ;
+КонецФункции
+
