@@ -1,0 +1,188 @@
+{
+  "Catalog": {
+    "БазовыеЕдиницыИзмерения": {
+      "Catalog.json": ""
+    },
+    "КассыККМ": {
+      "Catalog.json": ""
+    },
+    "Контрагенты": {
+      "Catalog.json": ""
+    },
+    "Магазины": {
+      "Catalog.json": ""
+    },
+    "Номенклатура": {
+      "Catalog.json": ""
+    },
+    "Организации": {
+      "Catalog.json": ""
+    },
+    "ПодключаемоеОборудование": {
+      "Catalog.json": ""
+    },
+    "РабочиеМеста": {
+      "Catalog.json": ""
+    },
+    "Склады": {
+      "Catalog.json": ""
+    },
+    "ТоварныеГруппы": {
+      "Catalog.json": ""
+    },
+    "УпаковкиНоменклатуры": {
+      "Catalog.json": ""
+    },
+    "ФизическиеЛица": {
+      "Catalog.json": ""
+    },
+    "ХарактеристикиНоменклатуры": {
+      "Catalog.json": ""
+    }
+  },
+  "ChartOfCharacteristicType": {
+    "ДополнительныеРеквизитыИСведения.json": ""
+  },
+  "CommonCommand": {
+    "Saby_ОткрытьФормуНастроек.json": "",
+    "Saby_ОткрытьФормуНастроек.obj.1c": ""
+  },
+  "CommonForm": {
+    "Saby_Blockly": {
+      "Form.json": "base\\CommonForm\\Saby_Blockly\\Form.json",
+      "Form.form803.json": "base\\CommonForm\\Saby_Blockly\\Form.form803.json",
+      "Form.obj.1c": "base\\CommonForm\\Saby_Blockly\\Form.obj.1c"
+    },
+    "Saby_Настройки": {
+      "Form.json": "base\\CommonForm\\Saby_Настройки\\Form.json",
+      "Form.form803.json": "base\\CommonForm\\Saby_Настройки\\Form.form803.json",
+      "Form.obj.1c": "base\\CommonForm\\Saby_Настройки\\Form.obj.1c"
+    },
+    "Saby_ПоискДисконтнойКарты": {
+      "Form.json": "base\\CommonForm\\Saby_ПоискДисконтнойКарты\\Form.json",
+      "Form.form803.json": "base\\CommonForm\\Saby_ПоискДисконтнойКарты\\Form.form803.json",
+      "Form.obj.1c": "base\\CommonForm\\Saby_ПоискДисконтнойКарты\\Form.obj.1c"
+    }
+  },
+  "CommonModule": {
+    "Saby_HTTP": {
+      "CommonModule.json": "base\\CommonModule\\Saby_HTTP\\CommonModule.json",
+      "CommonModule.obj.1c": "base\\CommonModule\\Saby_HTTP\\CommonModule.obj.1c"
+    },
+    "Saby_СвойстваИДопРеквизиты_Сервер": {
+      "CommonModule.json": "base\\CommonModule\\Saby_СвойстваИДопРеквизиты_Сервер\\CommonModule.json",
+      "CommonModule.obj.1c": "base\\CommonModule\\Saby_СвойстваИДопРеквизиты_Сервер\\CommonModule.obj.1c"
+    },
+    "Saby_Сервисы_Клиент": {
+      "CommonModule.json": "base\\CommonModule\\Saby_Сервисы_Клиент\\CommonModule.json",
+      "CommonModule.obj.1c": "base\\CommonModule\\Saby_Сервисы_Клиент\\CommonModule.obj.1c"
+    },
+    "Saby_Сервисы_Сервер": {
+      "CommonModule.json": "base\\CommonModule\\Saby_Сервисы_Сервер\\CommonModule.json",
+      "CommonModule.obj.1c": "base\\CommonModule\\Saby_Сервисы_Сервер\\CommonModule.obj.1c"
+    },
+    "Saby_Сервисы_СерверПодКонфигурацию": {
+      "CommonModule.json": "",
+      "CommonModule.obj.1c": ""
+    },
+    "ОборудованиеЧекопечатающиеУстройстваВызовСервера": {
+      "CommonModule.json": "",
+      "CommonModule.obj.1c": ""
+    }
+  },
+  "CommonPicture": {
+    "МаркируемаяАлкогольнаяПродукцияШапкаТЧ.json": "",
+    "РМК_Enter.json": "",
+    "РМК_Стереть.json": "",
+    "РМК_Цифра0.json": "",
+    "РМК_Цифра1.json": "",
+    "РМК_Цифра2.json": "",
+    "РМК_Цифра3.json": "",
+    "РМК_Цифра4.json": "",
+    "РМК_Цифра5.json": "",
+    "РМК_Цифра6.json": "",
+    "РМК_Цифра7.json": "",
+    "РМК_Цифра8.json": "",
+    "РМК_Цифра9.json": "",
+    "СерииНоменклатурыКолонкаСтатусов.json": "",
+    "СправкаПоАкселераторам.json": "",
+    "СтатусыУказанияСерий.json": ""
+  },
+  "ConfigurationExtension.json": "",
+  "Constant": {
+    "ИспользоватьАвтоматическиеСкидкиВПродажах.json": "",
+    "ИспользоватьОплатуБанковскимиКредитами.json": "",
+    "ИспользоватьОплатуПлатежнымиКартами.json": "",
+    "ИспользоватьПодключаемоеОборудование.json": "",
+    "ИспользоватьРасчетыСКлиентами.json": "",
+    "ИспользоватьРучныеСкидкиВПродажах.json": "",
+    "ИспользоватьСерииНоменклатуры.json": ""
+  },
+  "DataProcessor": {
+    "РМКУправляемыйРежим": {
+      "DataProcessor.json": "",
+      "Form": {
+        "Форма": {
+          "Form.json": "",
+          "Form.form803.json": "",
+          "Form.obj.1c": ""
+        }
+      }
+    }
+  },
+  "DefinedType": {
+    "КассаБПО.json": "",
+    "ОрганизацияБПО.json": ""
+  },
+  "Document": {
+    "КассоваяСмена": {
+      "Document.json": ""
+    },
+    "ЧекККМ": {
+      "Document.json": ""
+    }
+  },
+  "Enum": {
+    "ВидыОперацийЧекККМ.json": "",
+    "СтавкиНДС.json": "",
+    "СтатусыКассовойСмены.json": "",
+    "СтатусыЧековККМ.json": "",
+    "ТипыНоменклатуры.json": "",
+    "ТипыОплатЧекаККМ.json": "",
+    "ТипыПодключаемогоОборудования.json": "",
+    "ТипыСистемНалогообложенияККТ.json": "",
+    "ХозяйственныеОперации.json": ""
+  },
+  "FunctionalOption": {
+    "ИспользоватьАвтоматическиеСкидкиВПродажах.json": "",
+    "ИспользоватьОплатуБанковскимиКредитами.json": "",
+    "ИспользоватьОплатуПлатежнымиКартами.json": "",
+    "ИспользоватьПодключаемоеОборудование.json": "",
+    "ИспользоватьРасчетыСКлиентами.json": "",
+    "ИспользоватьРучныеСкидкиВПродажах.json": "",
+    "ИспользоватьСерииНоменклатуры.json": ""
+  },
+  "InformationRegister": {
+    "Saby_ОчередьЧеков": {
+      "InformationRegister.json": "base\\InformationRegister\\Saby_ОчередьЧеков\\InformationRegister.json"
+    },
+    "ДополнительныеСведения": {
+      "InformationRegister.json": ""
+    },
+    "ПрименениеСистемНалогообложения": {
+      "InformationRegister.json": ""
+    }
+  },
+  "Language": {
+    "Русский.json": ""
+  },
+  "StyleItem": {
+    "ВыборСтандартногоПериодаФонКнопки.json": "",
+    "ЦветТекстаОтмененнойСтрокиДокумента.json": ""
+  },
+  "Subsystem": {
+    "Администрирование": {
+      "Subsystem.json": ""
+    }
+  }
+}
