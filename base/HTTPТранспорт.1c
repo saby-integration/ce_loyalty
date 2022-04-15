@@ -308,8 +308,6 @@
 	Если Не Отказ И ТипЗнч(Коннекшин) = Тип("Соответствие") И ТипЗнч(Коннекшин["result"]) = Тип("Соответствие") Тогда
 		context_params.Вставить("ConnectionId", Коннекшин["result"]["id"]);
 	КонецЕсли;
-	//context_params.Вставить("ConnectionId",	"a2d0e291-569d-4fdc-8bed-f468b161b434"); //Test-Online
-	//context_params.Вставить("ConnectionId",	"26973f55-101c-4a97-875f-79adeb85abe3"); //Oleg Local
 	
 	Возврат Не Отказ;
 КонецФункции

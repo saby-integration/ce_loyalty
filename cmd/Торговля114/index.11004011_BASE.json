@@ -30,7 +30,7 @@
     }
   },
  "Language": {
-    "Русский.json": "src\\Language\\Торговля114\\Русский.11004011.json"
+    "Русский.json": "src\\Language\\Торговля114_BASE\\Русский.11004011.json"
   },
  "version.txt": "base\\version.txt"
 }
