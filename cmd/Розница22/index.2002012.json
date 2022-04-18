@@ -16,6 +16,10 @@
       "CommonModule.json": "base\\CommonModule\\Saby_HTTP\\CommonModule.json",
       "CommonModule.obj.1c": "base\\CommonModule\\Saby_HTTP\\CommonModule.obj.1c"
     },
+    "Saby_Core": {
+      "CommonModule.json": "base\\CommonModule\\Saby_Core\\CommonModule.json",
+      "CommonModule.obj.1c": "base\\CommonModule\\Saby_Core\\CommonModule.obj.1c"
+    },
     "Saby_СвойстваИДопРеквизиты_Сервер": {
       "CommonModule.json": "base\\CommonModule\\Saby_СвойстваИДопРеквизиты_Сервер\\CommonModule.json",
       "CommonModule.obj.1c": "base\\CommonModule\\Saby_СвойстваИДопРеквизиты_Сервер\\CommonModule.obj.1c"
