@@ -27,6 +27,14 @@
     "Saby_Сервисы_Сервер": {
       "CommonModule.json": "base\\CommonModule\\Saby_Сервисы_Сервер\\CommonModule.json",
       "CommonModule.obj.1c": "base\\CommonModule\\Saby_Сервисы_Сервер\\CommonModule.obj.1c"
+    },
+    "Saby_ФормаКлиент": {
+      "CommonModule.json": "base\\CommonModule\\Saby_ФормаКлиент\\CommonModule.json",
+      "CommonModule.obj.1c": "base\\CommonModule\\Saby_ФормаКлиент\\CommonModule.obj.1c"
+    },
+    "Saby_ФормаСервер": {
+      "CommonModule.json": "base\\CommonModule\\Saby_ФормаСервер\\CommonModule.json",
+      "CommonModule.obj.1c": "base\\CommonModule\\Saby_ФормаСервер\\CommonModule.obj.1c"
     }
   },
  "Language": {
