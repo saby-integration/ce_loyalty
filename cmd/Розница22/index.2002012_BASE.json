@@ -44,5 +44,5 @@
  "Language": {
     "Русский.json": "src\\Language\\Розница22_BASE\\Русский.2002012.json"
   },
- "version.txt": "base\\version.txt"
+ "version.txt": "version.txt"
 }

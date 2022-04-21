@@ -28,3 +28,14 @@ SET PLATFORM=80312
 v8unpack.exe -B src\%SUBSYSTEM% bin\%PRODUCT%.%SUBSYSTEM%.%DESCENTPR%.cfe --index cmd\%SUBSYSTEM%\index.%DESCENTPR%.json --version %PLATFORM% --descent %DESCENT%
 SET DESCENTPR=11004011_BASE
 v8unpack.exe -B src\%SUBSYSTEM% bin\%PRODUCT%.%SUBSYSTEM%.%DESCENTPR%.cfe --index cmd\%SUBSYSTEM%\index.%DESCENTPR%.json --version %PLATFORM% --descent %DESCENT%
+
+
+SET PRODUCT=Лояльность
+SET SUBSYSTEM=Торговля115
+SET DESCENTPR=11005007
+SET DESCENT=11005007
+SET PLATFORM=80312
+
+v8unpack.exe -B src\%SUBSYSTEM% bin\%PRODUCT%.%SUBSYSTEM%.%DESCENTPR%.cfe --index cmd\%SUBSYSTEM%\index.%DESCENTPR%.json --version %PLATFORM% --descent %DESCENT%
+SET DESCENTPR=11005007_BASE
+v8unpack.exe -B src\%SUBSYSTEM% bin\%PRODUCT%.%SUBSYSTEM%.%DESCENTPR%.cfe --index cmd\%SUBSYSTEM%\index.%DESCENTPR%.json --version %PLATFORM% --descent %DESCENT%
