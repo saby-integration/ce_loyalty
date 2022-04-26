@@ -53,7 +53,7 @@
 	//);
 	
 	context_params.Вставить("api_service", "/integration_config/service/");
-	Результат = Saby_HTTP.local_helper_exec_method(
+	Результат = Saby_Core.local_helper_exec_method(
 		context_params,
 		Новый Структура("url, method, params, auto_auth",
 			context_params.api_url+context_params.api_service,

@@ -15,8 +15,8 @@
 		context_params.password	= Saby_Настройки[Saby_Сервисы_Сервер.ИмяПароль()];
 		context_params.url		= Saby_Настройки[Saby_Сервисы_Сервер.ИмяСервер()];
 		context_params.api_url	= "https://"+context_params.url;
-		СессияИД = Saby_HTTP.local_helper_auth_by_login(context_params, Неопределено );
-		Saby_HTTP.ПолучитьConnection(context_params, Ложь);
+		СессияИД = Saby_Core.local_helper_auth_by_login(context_params, Неопределено );
+		Saby_Core.ПолучитьСоединение(context_params, Ложь);
 	Исключение
 		//Записать ошибку автороизации и получения коннекшина в журнал
 		Возврат;
@@ -37,7 +37,7 @@
 		);
 		
 		context_params.Вставить("api_service", "/integration_config/service/");
-		Результат = Saby_HTTP.local_helper_exec_method(
+		Результат = Saby_Core.local_helper_exec_method(
 			context_params,
 			Новый Структура("url, method, params, auto_auth",
 				context_params.api_url+context_params.api_service,

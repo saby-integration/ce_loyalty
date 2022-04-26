@@ -167,7 +167,7 @@
 	context_params.password	= Пароль;
 	context_params.url		= Сервер;
 	context_params.api_url	= "https://"+Сервер;
-	СессияИД = Saby_HTTP.local_helper_auth_by_login(context_params, Неопределено );
+	СессияИД = Saby_Core.local_helper_auth_by_login(context_params, Неопределено );
 	УстановитьСостоянияСоединения( ?(ТипЗнч(СессияИД) = Тип("Строка"), Истина, Ложь ) );
 КонецФункции
 

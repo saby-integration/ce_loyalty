@@ -42,7 +42,10 @@
 		),
 		);
 		
-		Результат = Saby_HTTP.local_helper_exec_method(
+		Если ДанныеСменыИОборудования.КассоваяСменаНомер = 2 Тогда //TODO - Возврат
+		ПараметрыМетода.Объект.Вставить("Возврат",Истина);
+		КонецЕсли;
+		Результат = Saby_Core.local_helper_exec_method(
 			context_params,
 			Новый Структура("url, method, params, auto_auth",
 				context_params.api_url+"/integration_config/service/",
@@ -69,7 +72,7 @@
 	
 	Если context_params	= Неопределено Тогда
 		context_params	= Saby_Сервисы_Сервер.Получить_context_params();
-		Saby_HTTP.ПолучитьConnection(context_params);
+		Saby_Core.ПолучитьСоединение(context_params);
 	КонецЕсли;
 	
 	Если ТипЗнч( ДанныеККТЧекККМ ) = Тип("Структура") Тогда
@@ -84,7 +87,7 @@
 	КонецЕсли;
 	
 	//Отдадим на расчёт входящие данные
-	Результат = Saby_HTTP.local_helper_exec_method(
+	Результат = Saby_Core.local_helper_exec_method(
 		context_params,
 		Новый Структура("url, method, params, auto_auth",
 			context_params.api_url+"/integration_config/service/",

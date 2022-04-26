@@ -15,7 +15,7 @@
 	context_params.password	= Saby_Настройки[Saby_Сервисы_Сервер.ИмяПароль()];
 	context_params.url		= Saby_Настройки[Saby_Сервисы_Сервер.ИмяСервер()];
 	context_params.api_url	= "https://"+context_params.url;
-	СессияИД = Saby_HTTP.local_helper_auth_by_login(context_params, Неопределено );
+	СессияИД = Saby_Core.local_helper_auth_by_login(context_params, Неопределено );
 	Если СессияИД = Неопределено Тогда
 		//"Информация", "Ошибка", "Предупреждение", "Примечание".
 		ИмяСобытия = "Saby ошибка авторизации";
@@ -23,7 +23,7 @@
 		Комментарий = "Открытие формы РМК"; 
 		ЖурналРегистрацииКлиент.ДобавитьСообщениеДляЖурналаРегистрации(ИмяСобытия, ПредставлениеУровня, Комментарий,,Истина);
 	Иначе
-		Saby_HTTP.ПолучитьConnection(context_params, Ложь);
+		Saby_Core.ПолучитьСоединение(context_params, Ложь);
 		Если Не context_params.Свойство("ConnectionId") Тогда
 			ИмяСобытия = "Saby ошибка получения Connection";
 			ПредставлениеУровня = "Ошибка";
