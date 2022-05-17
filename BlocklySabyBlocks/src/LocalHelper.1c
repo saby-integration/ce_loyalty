@@ -95,16 +95,6 @@
 	Возврат code_result.result;
 КонецФункции
 
-Функция local_helper_extsyncdoc_write(context_params, connection_uuid, extsyncdoc, objects)
-	Попытка
-		params = Новый Структура("param", Новый Структура("ConnectionId, ExtSyncDoc, ExtSyncObj", connection_uuid, extsyncdoc, objects));
-		Возврат local_helper_integration_api(context_params, "ExtSyncDoc.Write", params);
-	Исключение
-		ИнфОбОшибке = ИнформацияОбОшибке();
-		ВызватьИсключение(NewExtExceptionСтрока(ИнфОбОшибке));		
-	КонецПопытки;
-КонецФункции
-
 Функция local_helper_auth_by_login(context_params, __kwargs = Неопределено) Экспорт
 	//TODO
 	//Прочитать context_param, еще раз, 
@@ -160,61 +150,6 @@
 	Возврат result.Получить("result");
 КонецФункции
 
-Функция local_helper_extsyncdoc_prepare(context, extsyncdoc_uuid, direction)
-	Возврат local_helper_integration_api(context, "ExtSyncDoc.Prepare", 
-	Новый Структура("SyncDocId, Direction", extsyncdoc_uuid, direction)
-	);
-КонецФункции
-
-Функция local_helper_extsyncdoc_execute(context, extsyncdoc_uuid, direction)
-	Возврат local_helper_integration_api(context, "ExtSyncDoc.Execute",
-	Новый Структура("param", Новый Структура("SyncDocId, Direction", extsyncdoc_uuid, direction)));
-КонецФункции
-
-Функция local_helper_extsyncdoc_execute_lrs(context, extsyncdoc_uuid, direction)
-	Возврат local_helper_integration_api(context, "ExtSyncDoc.ExecuteLRS", Новый Структура("SyncDocId", extsyncdoc_uuid));
-КонецФункции
-
-Функция local_helper_extsyncdoc_write_predefined(context_params, ConnectionId, Type, ClientType, Objects)
-	
-	Попытка
-		params = Новый Структура("ConnectionId, Type, ClientType, Objects", ConnectionId, Type, ClientType, Objects);
-		Возврат local_helper_integration_api(context_params, "MappingObject.WritePredefined", params);
-	Исключение
-		ИнфОбОшибке = ИнформацияОбОшибке();
-		ВызватьИсключение(NewExtExceptionСтрока(ИнфОбОшибке));		
-	КонецПопытки;
-	
-КонецФункции
-
-Функция local_helper_extsyncdoc_get_obj_for_execute(context, extsyncdoc_uuid, direction)
-	Возврат local_helper_integration_api(context, "ExtSyncDoc.GetObjectsForExecute", 
-	Новый Структура("SyncDocId, Direction", extsyncdoc_uuid, direction)
-	);
-КонецФункции
-
-Функция local_helper_extsyncdoc_read(context, extsyncdoc_uuid)
-	Возврат local_helper_integration_api(context, "API3.ExtSyncDocRead", Новый Структура("param", Новый Структура("SyncDocId", extsyncdoc_uuid)));
-КонецФункции
-
-Функция local_helper_mapping_obj_find_and_update(context, _filter, _data)
-	response = local_helper_integration_api(context, "MappingObject.FindAndUpdate", 
-	Новый Структура("Filter, Data", _filter, _data)
-	);
-	Если response.Свойство("result") Тогда
-		Возврат response.result;
-	Иначе
-		//ВызватьИсключение СокрЛП(response);
-		ИнфОбОшибке = ИнформацияОбОшибке();
-		ВызватьИсключение NewExtExceptionСтрока(ИнфОбОшибке, СокрЛП(response));
-	КонецЕсли;
-КонецФункции
-
-Функция local_helper_extsyncdoc_prepare_saby(context, extsyncdoc_uuid)
-	Возврат local_helper_integration_api( context, "Connector.Prepare",
-	Новый Структура("ConnectorName, SyncDocId","Saby", extsyncdoc_uuid)
-	);
-КонецФункции
 
 //Выполнение POST/GET запроса
 // request_type: get, post, post_binary (в дата лежит имя временного файла)
@@ -383,23 +318,6 @@
 	КонецЕсли;
 	headers.Вставить("X-SBISSessionID", session);
 	
-КонецФункции
-
-Функция local_helper_read_document(context_params, document) Экспорт
-	Попытка
-		Результат	=	local_helper_api(context_params, "СБИС.ПрочитатьДокумент",
-		Новый Структура("Документ", document));
-	Исключение
-		ИнфоОбОшибке = ИнформацияОбОшибке();
-		//TODO проверка на отсутствуие документа
-		parentStruct = ExtExceptionAnalyse(ИнфоОбОшибке);
-		Если ( Найти(parentStruct.message, "Ошибка API") > 0) и (Истина) Тогда
-			//Если не найден документ //NotFound
-			ВызватьИсключение NewExtExceptionСтрока(ИнфоОбОшибке,,,,,"NotFound");
-		КонецЕсли;
-		ВызватьИсключение NewExtExceptionСтрока(ИнфоОбОшибке);
-	КонецПопытки;
-	Возврат Результат;
 КонецФункции
 
 Функция local_helper_get_server_datetime(context_params) Экспорт
