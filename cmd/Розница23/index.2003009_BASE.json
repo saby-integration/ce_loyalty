@@ -38,7 +38,7 @@
     }
   },
  "Language": {
-    "Русский.json": "src\\Language\\Розница23_BASE\\Русский.2003009.json"
+    "Русский.json": "src\\Language\\Розница23_BASE\\Русский.json"
   },
  "version.txt": "version.txt"
 }
