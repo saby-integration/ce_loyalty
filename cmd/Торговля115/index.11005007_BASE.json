@@ -6,8 +6,8 @@
       "Form.obj.1c": "base\\CommonForm\\Saby_Настройки\\Form.obj.1c"
     },
     "Saby_ПоискДисконтнойКарты": {
-      "Form.json": "",
-      "Form.form803.json": "",
+      "Form.json": "base\\CommonForm\\Saby_ПоискДисконтнойКарты\\Form.json",
+      "Form.form803.json": "base\\CommonForm\\Saby_ПоискДисконтнойКарты\\Form.form803.json",
       "Form.obj.1c": "base\\CommonForm\\Saby_ПоискДисконтнойКарты\\Form.obj.1c"
     }
   },
@@ -38,7 +38,7 @@
     }
   },
  "Language": {
-	"Русский.json": "src\\Language\\Торговля115_BASE\\Русский.11005007.json"
+	"Русский.json": "src\\Language\\Торговля115_BASE\\Русский.json"
   },
  "version.txt": "version.txt"
 }

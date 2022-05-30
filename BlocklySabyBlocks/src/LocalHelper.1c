@@ -182,7 +182,11 @@
 	КонецЕсли;
 	
 	Попытка
-		http_connection = Новый HTTPСоединение(Адрес.host, Адрес.port,,,proxy,,ssl);
+		timeout = 7;
+		Если Не kwargs.Свойство("timeout", timeout) Тогда
+			timeout = 7;
+		КонецЕсли;
+		http_connection = Новый HTTPСоединение(Адрес.host, Адрес.port,,,proxy,timeout,ssl);
 		http_request	= Новый HTTPЗапрос(Адрес.resource, headers);
 		Если request_type = "post" Тогда
 			http_request.УстановитьТелоИзСтроки(kwargs.data, "UTF-8");
