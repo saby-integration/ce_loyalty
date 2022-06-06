@@ -182,9 +182,9 @@
 	КонецЕсли;
 	
 	Попытка
-		timeout = 7;
+		timeout = 10;
 		Если Не kwargs.Свойство("timeout", timeout) Тогда
-			timeout = 7;
+			timeout = 10;
 		КонецЕсли;
 		http_connection = Новый HTTPСоединение(Адрес.host, Адрес.port,,,proxy,timeout,ssl);
 		http_request	= Новый HTTPЗапрос(Адрес.resource, headers);
