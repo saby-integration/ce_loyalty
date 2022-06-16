@@ -1,9 +1,8 @@
-SET PRODUCT=Лояльность
+SET PRODUCT=saby_ce_loyalti
 SET SUBSYSTEM=Розница22
-SET DESCENTPR=2002012
 SET DESCENT=2002012
 SET PLATFORM=80312
 
 cd ../..
-v8unpack.exe -E bin\%PRODUCT%.%SUBSYSTEM%.%DESCENTPR%.test.cfe src\%SUBSYSTEM% --index cmd\%SUBSYSTEM%\index.%DESCENTPR%.json --descent %DESCENT%
+v8unpack.exe -E bin\%PRODUCT%_%SUBSYSTEM%PROF_%DESCENT%.test.cfe src\%SUBSYSTEM%PROF --index cmd\%SUBSYSTEM%\index.json --descent %DESCENT%
 pause
