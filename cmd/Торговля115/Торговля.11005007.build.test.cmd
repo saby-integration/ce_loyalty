@@ -1,9 +1,0 @@
-SET PRODUCT=Лояльность
-SET SUBSYSTEM=Торговля115
-SET DESCENTPR=11005007
-SET DESCENT=11005007
-SET PLATFORM=80312
-
-cd ../..
-v8unpack.exe -B src\%SUBSYSTEM% bin\%PRODUCT%.%SUBSYSTEM%.%DESCENTPR%.test.cfe --index cmd\%SUBSYSTEM%\index.%DESCENTPR%.json --version %PLATFORM% --descent %DESCENT% --gui 2
-pause
