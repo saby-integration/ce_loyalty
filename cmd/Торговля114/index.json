@@ -23,21 +23,9 @@
     "ДополнительныеРеквизитыИСведения.json": "base\\Торговля114\\ChartOfCharacteristicType\\ДополнительныеРеквизитыИСведения.json"
   },
   "CommonCommand": {
-    "Saby_ОткрытьФормуНастроек.json": "base\\Торговля114\\CommonCommand\\Saby_ОткрытьФормуНастроек.json",
-    "Saby_ОткрытьФормуНастроек.obj.1c": "base\\Торговля114\\CommonCommand\\Saby_ОткрытьФормуНастроек.obj.1c"
+    "Saby_ОткрытьФормуНастроек.json": "base\\CommonCommand\\Saby_ОткрытьФормуНастроек.json",
+    "Saby_ОткрытьФормуНастроек.obj.1c": "base\\CommonCommand\\Saby_ОткрытьФормуНастроек.obj.1c"
   },
-  "CommonForm": {
-    "Saby_Настройки": {
-      "Form.json": "base\\CommonForm\\Saby_Настройки\\Form.json",
-      "Form.form803.json": "base\\CommonForm\\Saby_Настройки\\Form.form803.json",
-      "Form.obj.1c": "base\\CommonForm\\Saby_Настройки\\Form.obj.1c"
-    },
-    "Saby_ПоискДисконтнойКарты": {
-      "Form.json": "base\\CommonForm\\Saby_ПоискДисконтнойКарты\\Form.json",
-      "Form.form803.json": "base\\CommonForm\\Saby_ПоискДисконтнойКарты\\Form.form803.json",
-      "Form.obj.1c": "base\\CommonForm\\Saby_ПоискДисконтнойКарты\\Form.obj.1c"
-    }
-  },  
   "CommonModule": {
     "Saby_Core": {
       "CommonModule.json": "base\\CommonModule\\Saby_Core\\CommonModule.json",
@@ -77,25 +65,43 @@
     }
   },
   "CommonPicture": {
-    "ЗаполнитьФорму.json": "base\\Торговля114\\CommonPicture\\ЗаполнитьФорму.json",
-    "Набор.json": "base\\Торговля114\\CommonPicture\\Набор.json",
-    "Наборы.json": "base\\Торговля114\\CommonPicture\\Наборы.json",
-    "РМК_Стереть.json": "base\\Торговля114\\CommonPicture\\РМК_Стереть.json",
-    "РМК_ТочкаКалькулятора.json": "base\\Торговля114\\CommonPicture\\РМК_ТочкаКалькулятора.json",
-    "РМК_Цифра0.json": "base\\Торговля114\\CommonPicture\\РМК_Цифра0.json",
-    "РМК_Цифра1.json": "base\\Торговля114\\CommonPicture\\РМК_Цифра1.json",
-    "РМК_Цифра2.json": "base\\Торговля114\\CommonPicture\\РМК_Цифра2.json",
-    "РМК_Цифра3.json": "base\\Торговля114\\CommonPicture\\РМК_Цифра3.json",
-    "РМК_Цифра4.json": "base\\Торговля114\\CommonPicture\\РМК_Цифра4.json",
-    "РМК_Цифра5.json": "base\\Торговля114\\CommonPicture\\РМК_Цифра5.json",
-    "РМК_Цифра6.json": "base\\Торговля114\\CommonPicture\\РМК_Цифра6.json",
-    "РМК_Цифра7.json": "base\\Торговля114\\CommonPicture\\РМК_Цифра7.json",
-    "РМК_Цифра8.json": "base\\Торговля114\\CommonPicture\\РМК_Цифра8.json",
-    "РМК_Цифра9.json": "base\\Торговля114\\CommonPicture\\РМК_Цифра9.json",
-    "СерииНоменклатурыКолонкаСтатусов.json": "base\\Торговля114\\CommonPicture\\СерииНоменклатурыКолонкаСтатусов.json",
-    "СтатусыУказанияСерий.json": "base\\Торговля114\\CommonPicture\\СтатусыУказанияСерий.json"
+    "ЗаполнитьФорму.json": "base\\CommonPicture\\ЗаполнитьФорму.json",
+    "Набор.json": "base\\CommonPicture\\Набор.json",
+    "Наборы.json": "base\\CommonPicture\\Наборы.json",
+    "РМК_Стереть.json": "base\\CommonPicture\\РМК_Стереть.json",
+    "РМК_ТочкаКалькулятора.json": "base\\CommonPicture\\РМК_ТочкаКалькулятора.json",
+    "РМК_Цифра0.json": "base\\CommonPicture\\РМК_Цифра0.json",
+    "РМК_Цифра1.json": "base\\CommonPicture\\РМК_Цифра1.json",
+    "РМК_Цифра2.json": "base\\CommonPicture\\РМК_Цифра2.json",
+    "РМК_Цифра3.json": "base\\CommonPicture\\РМК_Цифра3.json",
+    "РМК_Цифра4.json": "base\\CommonPicture\\РМК_Цифра4.json",
+    "РМК_Цифра5.json": "base\\CommonPicture\\РМК_Цифра5.json",
+    "РМК_Цифра6.json": "base\\CommonPicture\\РМК_Цифра6.json",
+    "РМК_Цифра7.json": "base\\CommonPicture\\РМК_Цифра7.json",
+    "РМК_Цифра8.json": "base\\CommonPicture\\РМК_Цифра8.json",
+    "РМК_Цифра9.json": "base\\CommonPicture\\РМК_Цифра9.json",
+    "СерииНоменклатурыКолонкаСтатусов.json": "base\\CommonPicture\\СерииНоменклатурыКолонкаСтатусов.json",
+    "СтатусыУказанияСерий.json": "base\\CommonPicture\\СтатусыУказанияСерий.json"
   },
   "ConfigurationExtension.json": "base\\Торговля114\\ConfigurationExtension.json",
+  "DataProcessor": {
+    "СБИС": {
+      "DataProcessor.json": "base\\DataProcessor\\СБИС\\DataProcessor.json",
+      "DataProcessor.obj.1c": "base\\DataProcessor\\СБИС\\DataProcessor.obj.1c",
+      "Form": {
+        "Настройки": {
+          "Form.json": "base\\DataProcessor\\СБИС\\Form\\Настройки\\Form.json",
+          "Form.form803.json": "base\\DataProcessor\\СБИС\\Form\\Настройки\\Form.form803.json",
+          "Form.obj.1c": "base\\DataProcessor\\СБИС\\Form\\Настройки\\Form.obj.1c"
+        },
+        "ПоискДисконтнойКарты": {
+          "Form.json": "base\\DataProcessor\\СБИС\\Form\\ПоискДисконтнойКарты\\Form.json",
+          "Form.form803.json": "base\\DataProcessor\\СБИС\\Form\\ПоискДисконтнойКарты\\Form.form803.json",
+          "Form.obj.1c": "base\\DataProcessor\\СБИС\\Form\\ПоискДисконтнойКарты\\Form.obj.1c"
+        }
+      }
+    }
+  },  
   "DefinedType": {
     "ДенежнаяСуммаЛюбогоЗнака.json": "base\\Торговля114\\DefinedType\\ДенежнаяСуммаЛюбогоЗнака.json",
     "ДенежнаяСуммаНеотрицательная.json": "base\\Торговля114\\DefinedType\\ДенежнаяСуммаНеотрицательная.json",
