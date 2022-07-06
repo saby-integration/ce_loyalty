@@ -12,7 +12,7 @@
   "copyinfo": [
     "2",
     "e764c702-1c2d-4645-9ce8-eacc7f183b31",
-    "ByiWtgtIg3DG2xe1nuSYgtSRmacr1WfMk3ZktPdHODWyIWV5AxOFkgOaszIMtkK12ntzpxNC8ylBn9ZZdwtr9A=="
+    "ByiWtgtIg3DG2xe1nuSYgtSRmacr1WfMk3ZktPdHODWyIWV5AxOFkgOaszIMtkK1qeS//EjEPlzH25qiUKkrgQ=="
   ],
   "data": [
     [
@@ -36,11 +36,11 @@
                   "0",
                   "ff8c3af2-eccf-4561-97f3-3e064fc5fea6"
                 ],
-                "\"Loyalty_Retail23\"",
+                "\"СБИС\"",
                 [
                   "1",
                   "\"ru\"",
-                  "\"СБИС Лояльность Розница2.3\""
+                  "\"СБИС\""
                 ],
                 "\"\"",
                 "1",
@@ -806,23 +806,7 @@
           ],
           [
             "7dcd43d9-aca5-4926-b549-1842e6a4e8cf",
-            "16",
-            "682774e7-1983-4062-b605-374e40b0328e",
-            "2babea48-c4d3-4f4c-afa0-c411f85e77c6",
-            "927d36f3-df0a-4ef4-a082-f3cd872c41e7",
-            "c5da5939-6d67-4acb-be0f-d4b5d6f33bf8",
-            "0c492d74-d0a1-4af4-898e-75419be00bda",
-            "11db0d63-df23-415b-94cc-0423b299a1e2",
-            "cbdb180a-f91d-474a-bcb3-05f44f9d5d95",
-            "211d5c15-a142-4d4c-9ec7-541da6d09379",
-            "a73a8c5b-8fa6-4472-b78f-10854939c381",
-            "e4eef04d-922d-43fe-be05-6d8fcc8fe6b2",
-            "5f85088f-e4a6-42f4-8dcf-7416dd9e64e1",
-            "791664fb-5e66-4581-bc68-355531594840",
-            "df9fce1f-f4d1-407d-aa40-52fc0c094bd6",
-            "acb3ed96-acfc-43b8-8e2d-6eb6b99dad9b",
-            "9615cab0-1a69-427b-9198-e24ed883185d",
-            "0784e2c3-ea36-4e75-88ba-ac3645ac17ee"
+            "0"
           ],
           [
             "857c4a91-e5f4-4fac-86ec-787626f1c108",
@@ -899,9 +883,7 @@
             ],
             [
               "07ee8426-87f1-11d5-b99c-0050bae0a95d",
-              "2",
-              "feae94af-562e-469d-9843-25c5574e9090",
-              "13545ec1-383d-47ca-8daf-4ef5bc3dce2a"
+              "0"
             ],
             [
               "13134201-f60b-11d5-a3c7-0050bae0a776",
@@ -918,7 +900,7 @@
             [
               "2f1a5187-fb0e-4b05-9489-dc5dd6412348",
               "1",
-              "3d198009-5923-4b6c-84a0-a96eb3e5bd12"
+              "70587b63-fea4-4f8d-85cc-81dac0397d4b"
             ],
             [
               "36a8e346-9aaa-4af9-bdbd-83be3c177977",
@@ -947,8 +929,9 @@
             ],
             [
               "bf845118-327b-4682-b5c6-285d2a0eb296",
-              "1",
-              "16f0412d-7571-4d07-984d-34bc1002b545"
+              "2",
+              "16f0412d-7571-4d07-984d-34bc1002b545",
+              "302687e0-144e-4dab-961c-e208e2cc2041"
             ],
             [
               "cf4abea6-37b2-11d4-940f-008048da11f9",
@@ -1097,9 +1080,9 @@
     ]
   ],
   "uuid": "ff8c3af2-eccf-4561-97f3-3e064fc5fea6",
-  "name": "Loyalty_Retail23",
+  "name": "СБИС",
   "name2": {
-    "ru": "СБИС Лояльность Розница2.3"
+    "ru": "СБИС"
   },
   "comment": "",
   "h1_0": "1",

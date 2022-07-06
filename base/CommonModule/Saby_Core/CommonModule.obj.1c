@@ -5,6 +5,9 @@
 #Область include_core_src_Helpers_РаботаСоСвойствамиСтруктуры
 #КонецОбласти
 
+#Область include_core_src_Helpers_ПроверкаВерсииПродукта_НазваниеПродукта
+#КонецОбласти
+
 #Область include_core_src_ExtException
 #КонецОбласти
 
@@ -12,9 +15,6 @@
 #КонецОбласти
 
 #Область include_base_src_AdditionLocalHelper
-#КонецОбласти
-
-#Область include_core_src_Helpers_ПроверкаВерсииПродукта_ВМодулеОбъекта
 #КонецОбласти
 
 #Область include_base_src_НастройкиРасширения

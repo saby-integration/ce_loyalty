@@ -40,20 +40,9 @@
       "Catalog.json": "base\\Розница23\\Catalog\\ХарактеристикиНоменклатуры\\Catalog.json"
     }
   },
+
   "ChartOfCharacteristicType": {
     "ДополнительныеРеквизитыИСведения.json": "base\\Розница23\\ChartOfCharacteristicType\\ДополнительныеРеквизитыИСведения.json"
-  },
-  "CommonForm": {
-    "Saby_Настройки": {
-      "Form.json": "base\\CommonForm\\Saby_Настройки\\Form.json",
-      "Form.form803.json": "base\\CommonForm\\Saby_Настройки\\Form.form803.json",
-      "Form.obj.1c": "base\\CommonForm\\Saby_Настройки\\Form.obj.1c"
-    },
-    "Saby_ПоискДисконтнойКарты": {
-      "Form.json": "base\\CommonForm\\Saby_ПоискДисконтнойКарты\\Form.json",
-      "Form.form803.json": "base\\CommonForm\\Saby_ПоискДисконтнойКарты\\Form.form803.json",
-      "Form.obj.1c": "base\\CommonForm\\Saby_ПоискДисконтнойКарты\\Form.obj.1c"
-    }
   },
   "CommonCommand": {
     "Saby_ОткрытьФормуНастроек.json": "base\\CommonCommand\\Saby_ОткрытьФормуНастроек.json",
@@ -97,24 +86,6 @@
       "CommonModule.obj.1c": "base\\CommonModule\\Saby_ФормаСервер\\CommonModule.obj.1c"
     }
   },
-  "CommonPicture": {
-    "МаркируемаяАлкогольнаяПродукцияШапкаТЧ.json": "base\\Розница23\\CommonPicture\\МаркируемаяАлкогольнаяПродукцияШапкаТЧ.json",
-    "РМК_Enter.json": "base\\Розница23\\CommonPicture\\РМК_Enter.json",
-    "РМК_Стереть.json": "base\\Розница23\\CommonPicture\\РМК_Стереть.json",
-    "РМК_Цифра0.json": "base\\Розница23\\CommonPicture\\РМК_Цифра0.json",
-    "РМК_Цифра1.json": "base\\Розница23\\CommonPicture\\РМК_Цифра1.json",
-    "РМК_Цифра2.json": "base\\Розница23\\CommonPicture\\РМК_Цифра2.json",
-    "РМК_Цифра3.json": "base\\Розница23\\CommonPicture\\РМК_Цифра3.json",
-    "РМК_Цифра4.json": "base\\Розница23\\CommonPicture\\РМК_Цифра4.json",
-    "РМК_Цифра5.json": "base\\Розница23\\CommonPicture\\РМК_Цифра5.json",
-    "РМК_Цифра6.json": "base\\Розница23\\CommonPicture\\РМК_Цифра6.json",
-    "РМК_Цифра7.json": "base\\Розница23\\CommonPicture\\РМК_Цифра7.json",
-    "РМК_Цифра8.json": "base\\Розница23\\CommonPicture\\РМК_Цифра8.json",
-    "РМК_Цифра9.json": "base\\Розница23\\CommonPicture\\РМК_Цифра9.json",
-    "СерииНоменклатурыКолонкаСтатусов.json": "base\\Розница23\\CommonPicture\\СерииНоменклатурыКолонкаСтатусов.json",
-    "СправкаПоАкселераторам.json": "base\\Розница23\\CommonPicture\\СправкаПоАкселераторам.json",
-    "СтатусыУказанияСерий.json": "base\\Розница23\\CommonPicture\\СтатусыУказанияСерий.json"
-  },
   "ConfigurationExtension.json": "base\\Розница23\\ConfigurationExtension.json",
   "Constant": {
     "ИспользоватьАвтоматическиеСкидкиВПродажах.json": "base\\Розница23\\Constant\\ИспользоватьАвтоматическиеСкидкиВПродажах.json",
@@ -133,6 +104,22 @@
           "Form.json": "base\\Розница23\\DataProcessor\\РМКУправляемыйРежим\\Form\\Форма\\Form.json",
           "Form.form803.json": "base\\Розница23\\DataProcessor\\РМКУправляемыйРежим\\Form\\Форма\\Form.form803.json",
           "Form.obj.1c": "base\\Розница23\\DataProcessor\\РМКУправляемыйРежим\\Form\\Форма\\Form.obj.1c"
+        }
+      }
+    },
+    "СБИС": {
+      "DataProcessor.json": "base\\DataProcessor\\СБИС\\DataProcessor.json",
+      "DataProcessor.obj.1c": "base\\DataProcessor\\СБИС\\DataProcessor.obj.1c",
+      "Form": {
+        "Настройки": {
+          "Form.json": "base\\DataProcessor\\СБИС\\Form\\Настройки\\Form.json",
+          "Form.form803.json": "base\\DataProcessor\\СБИС\\Form\\Настройки\\Form.form803.json",
+          "Form.obj.1c": "base\\DataProcessor\\СБИС\\Form\\Настройки\\Form.obj.1c"
+        },
+        "ПоискДисконтнойКарты": {
+          "Form.json": "base\\DataProcessor\\СБИС\\Form\\ПоискДисконтнойКарты\\Form.json",
+          "Form.form803.json": "base\\DataProcessor\\СБИС\\Form\\ПоискДисконтнойКарты\\Form.form803.json",
+          "Form.obj.1c": "base\\DataProcessor\\СБИС\\Form\\ПоискДисконтнойКарты\\Form.obj.1c"
         }
       }
     }
