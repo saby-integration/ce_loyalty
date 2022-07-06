@@ -64,25 +64,6 @@
       "CommonModule.obj.1c": "base\\Торговля114\\CommonModule\\МенеджерОборудованияКлиент\\CommonModule.obj.1c"
     }
   },
-  "CommonPicture": {
-    "ЗаполнитьФорму.json": "base\\CommonPicture\\ЗаполнитьФорму.json",
-    "Набор.json": "base\\CommonPicture\\Набор.json",
-    "Наборы.json": "base\\CommonPicture\\Наборы.json",
-    "РМК_Стереть.json": "base\\CommonPicture\\РМК_Стереть.json",
-    "РМК_ТочкаКалькулятора.json": "base\\CommonPicture\\РМК_ТочкаКалькулятора.json",
-    "РМК_Цифра0.json": "base\\CommonPicture\\РМК_Цифра0.json",
-    "РМК_Цифра1.json": "base\\CommonPicture\\РМК_Цифра1.json",
-    "РМК_Цифра2.json": "base\\CommonPicture\\РМК_Цифра2.json",
-    "РМК_Цифра3.json": "base\\CommonPicture\\РМК_Цифра3.json",
-    "РМК_Цифра4.json": "base\\CommonPicture\\РМК_Цифра4.json",
-    "РМК_Цифра5.json": "base\\CommonPicture\\РМК_Цифра5.json",
-    "РМК_Цифра6.json": "base\\CommonPicture\\РМК_Цифра6.json",
-    "РМК_Цифра7.json": "base\\CommonPicture\\РМК_Цифра7.json",
-    "РМК_Цифра8.json": "base\\CommonPicture\\РМК_Цифра8.json",
-    "РМК_Цифра9.json": "base\\CommonPicture\\РМК_Цифра9.json",
-    "СерииНоменклатурыКолонкаСтатусов.json": "base\\CommonPicture\\СерииНоменклатурыКолонкаСтатусов.json",
-    "СтатусыУказанияСерий.json": "base\\CommonPicture\\СтатусыУказанияСерий.json"
-  },
   "ConfigurationExtension.json": "base\\Торговля114\\ConfigurationExtension.json",
   "DataProcessor": {
     "СБИС": {

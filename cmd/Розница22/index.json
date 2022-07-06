@@ -85,33 +85,6 @@
       "CommonModule.obj.1c": "base\\CommonModule\\Saby_ФормаСервер\\CommonModule.obj.1c"
     }
   },
-  "CommonPicture": {
-    "Информация32.json": "base\\Розница22\\CommonPicture\\Информация32.json",
-    "МаркируемаяАлкогольнаяПродукцияТЧ.json": "base\\Розница22\\CommonPicture\\МаркируемаяАлкогольнаяПродукцияТЧ.json",
-    "МаркируемаяАлкогольнаяПродукцияШапкаТЧ.json": "base\\Розница22\\CommonPicture\\МаркируемаяАлкогольнаяПродукцияШапкаТЧ.json",
-    "НовостиПредупреждение32.json": "base\\Розница22\\CommonPicture\\НовостиПредупреждение32.json",
-    "РМК_Enter.json": "base\\CommonPicture\\РМК_Enter.json",
-    "РМК_Стереть.json": "base\\CommonPicture\\РМК_Стереть.json",
-    "РМК_Цифра0.json": "base\\CommonPicture\\РМК_Цифра0.json",
-    "РМК_Цифра1.json": "base\\CommonPicture\\РМК_Цифра1.json",
-    "РМК_Цифра2.json": "base\\CommonPicture\\РМК_Цифра2.json",
-    "РМК_Цифра3.json": "base\\CommonPicture\\РМК_Цифра3.json",
-    "РМК_Цифра4.json": "base\\CommonPicture\\РМК_Цифра4.json",
-    "РМК_Цифра5.json": "base\\CommonPicture\\РМК_Цифра5.json",
-    "РМК_Цифра6.json": "base\\CommonPicture\\РМК_Цифра6.json",
-    "РМК_Цифра7.json": "base\\CommonPicture\\РМК_Цифра7.json",
-    "РМК_Цифра8.json": "base\\CommonPicture\\РМК_Цифра8.json",
-    "РМК_Цифра9.json": "base\\CommonPicture\\РМК_Цифра9.json",
-    "СерииНоменклатурыКолонкаСтатусов.json": "base\\CommonPicture\\СерииНоменклатурыКолонкаСтатусов.json",
-    "СправкаПоАкселераторам.json": "base\\CommonPicture\\СправкаПоАкселераторам.json",
-    "СтатусыУказанияСерий.json": "base\\CommonPicture\\СтатусыУказанияСерий.json",
-	
-    "МаркируемаяАлкогольнаяПродукцияШапкаТЧ.json": "base\\CommonPicture\\МаркируемаяАлкогольнаяПродукцияШапкаТЧ.json",
-    "МаркируемаяАлкогольнаяПродукцияТЧ.json": "base\\CommonPicture\\МаркируемаяАлкогольнаяПродукцияТЧ.json",
-    "НовостиПредупреждение32.json": "base\\CommonPicture\\НовостиПредупреждение32.json",
-    "Информация32.json": "base\\CommonPicture\\Информация32.json"
-	
-  },
   "ConfigurationExtension.json": "base\\Розница22\\ConfigurationExtension.json",
   "Constant": {
     "ИспользоватьАвтоматическиеСкидкиВПродажах.json": "base\\Розница22\\Constant\\ИспользоватьАвтоматическиеСкидкиВПродажах.json",
