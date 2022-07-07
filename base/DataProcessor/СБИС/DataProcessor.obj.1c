@@ -1,0 +1,21 @@
+
+#Область include_BlocklySabyBlocks_src_LocalHelper
+#КонецОбласти
+
+#Область include_core_src_Helpers_ПроверкаВерсииПродукта_ВМодулеОбъекта
+#КонецОбласти
+
+#Область include_base_src_Helpers_НастройкиПодключения
+#КонецОбласти
+
+#Область include_core_src_Helpers_РаботаСоСвойствамиСтруктуры
+#КонецОбласти
+
+#Область include_core_src_Helpers_ПроверкаВерсииПродукта_НазваниеПродукта
+#КонецОбласти
+
+#Область include_base_src_AdditionLocalHelper
+#КонецОбласти
+
+#Область include_core_src_ExtException
+#КонецОбласти
