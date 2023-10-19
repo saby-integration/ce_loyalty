@@ -1,0 +1,4 @@
+[submodule "core"]
+	path = core
+	url = https://github.com/saby-integration/vo3_core
+    	branch = rc-23.2127

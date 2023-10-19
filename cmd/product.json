@@ -1,0 +1,86 @@
+{
+  "Retail22_2002012": {
+      "src": "src/Retail22",
+      "bin": "bin/saby_ce_loyalty_Retail22PROF_2002012.cfe",
+      "temp": "temp",
+      "index": "cmd/Retail22/index.json",
+      "version": "80312",
+      "descent": 0,
+      "gui": null,
+      "disable": false
+  },
+  "Retail22_2002012_test": {
+      "src": "src/Retail22",
+      "bin": "bin/saby_ce_loyalty_Retail22PROF_2002012_test.cfe",
+      "temp": "temp",
+      "index": "cmd/Retail22/index.json",
+      "version": "80312",
+      "descent": 0,
+      "gui": null,
+      "disable": true
+  },
+  
+  "Retail23_2003009": {
+      "src": "src/Retail23",
+      "bin": "bin/saby_ce_loyalty_Retail23PROF_2003009.cfe",
+      "temp": "temp",
+      "index": "cmd/Retail23/index.json",
+      "version": "80312",
+      "descent": 0,
+      "gui": null,
+      "disable": false
+  },
+  "Retail23_2003009_test": {
+      "src": "src/Retail23",
+      "bin": "bin/saby_ce_loyalty_Retail23PROF_2003009_test.cfe",
+      "temp": "temp",
+      "index": "cmd/Retail23/index.json",
+      "version": "80312",
+      "descent": 0,
+      "gui": null,
+      "disable": true
+  },
+
+  "Trade114_11004011": {
+      "src": "src/Trade114",
+      "bin": "bin/saby_ce_loyalty_Trade114PROF_11004011.cfe",
+      "temp": "temp",
+      "index": "cmd/Trade114/index.json",
+      "version": "80312",
+      "descent": 0,
+      "gui": null,
+      "disable": false
+  },
+  "Trade114_11004011_test": {
+      "src": "src/Trade114",
+      "bin": "bin/saby_ce_loyalty_Trade114PROF_11004011_test.cfe",
+      "temp": "temp",
+      "index": "cmd/Trade114/index.json",
+      "version": "80312",
+      "descent": 0,
+      "gui": null,
+      "disable": true
+  },
+
+  "Trade115_11005007": {
+      "src": "src/Trade115",
+      "bin": "bin/saby_ce_loyalty_Trade115PROF_11005007.cfe",
+      "temp": "temp",
+      "index": "cmd/Trade115/index.json",
+      "version": "80312",
+      "descent": 0,
+      "gui": 2,
+      "disable": false
+  },
+  "Trade115_11005007_test": {
+      "src": "src/Trade115",
+      "bin": "bin/saby_ce_loyalty_Trade115PROF_11005007_test.cfe",
+      "temp": "temp",
+      "index": "cmd/Trade115/index.json",
+      "version": "80312",
+      "descent": 0,
+      "gui": 2,
+      "disable": true
+  }
+  
+}
