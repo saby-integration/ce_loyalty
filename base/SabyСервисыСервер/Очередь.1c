@@ -1,0 +1,29 @@
+
+Функция ЗакрытьДокументы( context_params = Неопределено, ПараметрыМетода ) Экспорт
+	ОбработкаСБИС = Обработки.SABY.Создать();
+	Результат = ОбработкаСБИС.local_helper_exec_method(
+		context_params,
+		Новый Структура("url, method, params, auto_auth",
+			context_params.api_url+"/integration_config/service/",
+			"API3.LoyaltyTransactionRegister",
+			ПараметрыМетода,
+			Истина,
+		)
+	);
+	Возврат Результат;
+КонецФункции
+
+Функция РассчитатьДокументы( context_params = Неопределено, ПараметрыОбъектов ) Экспорт
+	ОбработкаСБИС = Обработки.SABY.Создать();
+	Результат = ОбработкаСБИС.local_helper_exec_method(
+		context_params,
+		Новый Структура("url, method, params, auto_auth",
+			context_params.api_url+"/integration_config/service/",
+			"API3.LoyaltyTransactionCalculate",
+			ПараметрыОбъектов,
+			Истина,
+		)
+	);
+	Возврат get_prop(Результат, "result", Неопределено);
+КонецФункции
+
