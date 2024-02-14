@@ -1,0 +1,86 @@
+{
+  "РОЗН2-2_2002012": {
+      "src": "src/РОЗН2-2",
+      "bin": "bin/saby_ce_loyalty_РОЗН2-2PROF_2002012.cfe",
+      "temp": "temp",
+      "index": "cmd/РОЗН2-2/index.json",
+      "version": "80312",
+      "descent": 0,
+      "gui": null,
+      "disable": false
+  },
+  "РОЗН2-2_2002012_test": {
+      "src": "src/РОЗН2-2",
+      "bin": "bin/saby_ce_loyalty_РОЗН2-2PROF_2002012_test.cfe",
+      "temp": "temp",
+      "index": "cmd/РОЗН2-2/index.json",
+      "version": "80312",
+      "descent": 0,
+      "gui": null,
+      "disable": true
+  },
+  
+  "РОЗН2-3_2003009": {
+      "src": "src/РОЗН2-3",
+      "bin": "bin/saby_ce_loyalty_РОЗН2-3PROF_2003009.cfe",
+      "temp": "temp",
+      "index": "cmd/РОЗН2-3/index.json",
+      "version": "80312",
+      "descent": 0,
+      "gui": null,
+      "disable": false
+  },
+  "РОЗН2-3_2003009_test": {
+      "src": "src/РОЗН2-3",
+      "bin": "bin/saby_ce_loyalty_РОЗН2-3PROF_2003009_test.cfe",
+      "temp": "temp",
+      "index": "cmd/РОЗН2-3/index.json",
+      "version": "80312",
+      "descent": 0,
+      "gui": null,
+      "disable": true
+  },
+
+  "УТ11-4_11004011": {
+      "src": "src/УТ11-4",
+      "bin": "bin/saby_ce_loyalty_УТ11-4PROF_11004011.cfe",
+      "temp": "temp",
+      "index": "cmd/УТ11-4/index.json",
+      "version": "80312",
+      "descent": 0,
+      "gui": null,
+      "disable": false
+  },
+  "УТ11-4_11004011_test": {
+      "src": "src/УТ11-4",
+      "bin": "bin/saby_ce_loyalty_УТ11-4PROF_11004011_test.cfe",
+      "temp": "temp",
+      "index": "cmd/УТ11-4/index.json",
+      "version": "80312",
+      "descent": 0,
+      "gui": null,
+      "disable": true
+  },
+
+  "УТ11-5_11005007": {
+      "src": "src/УТ11-5",
+      "bin": "bin/saby_ce_loyalty_УТ11-5PROF_11005007.cfe",
+      "temp": "temp",
+      "index": "cmd/УТ11-5/index.json",
+      "version": "80312",
+      "descent": 0,
+      "gui": 2,
+      "disable": false
+  },
+  "УТ11-5_11005007_test": {
+      "src": "src/УТ11-5",
+      "bin": "bin/saby_ce_loyalty_УТ11-5PROF_11005007_test.cfe",
+      "temp": "temp",
+      "index": "cmd/УТ11-5/index.json",
+      "version": "80312",
+      "descent": 0,
+      "gui": 2,
+      "disable": true
+  }
+  
+}

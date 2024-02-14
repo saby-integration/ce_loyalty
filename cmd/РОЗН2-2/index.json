@@ -1,0 +1,241 @@
+{
+  "Области include": {
+    "core_base_Helpers_НастройкиПодключения": "base_src_Helpers_НастройкиПодключения",
+    "core_base_Helpers_ОбщиеНастройки": "base_src_Helpers_ОбщиеНастройки",
+    "core_base_ПроверкаВерсии_ПолучитьИмяФайлаИНомерТекущейВерсии": "core_base_ПроверкаВерсии_ПолучитьИмяФайлаИНомерТекущейВерсииРасширение",
+    "core_base_ОсобенностиПлатформы_РаботаСоСтроками": "core_base_ОсобенностиПлатформы_РаботаСоСтрокамиУФ",
+	"core_base_ОсобенностиПлатформы_РаботаСЭлементамиФормы": "core_base_ОсобенностиПлатформы_РаботаСЭлементамиУФ",
+    "core_base_Helpers_FormGetters": "core_base_Helpers_FormGetters803",
+    "core_base_ОбработчикиСобытий_ПриСозданииНовогоПодключения": "core_base_ОбработчикиСобытий_ПриСозданииНовогоПодключения",
+    "core_src_API": "base_src_API",
+    "base_ОбработчикиСобытий_ПриНачалеРаботы": "base_ОбработчикиСобытий_ПриНачалеРаботы"
+  },
+  "Catalog": {
+    "БазовыеЕдиницыИзмерения": {
+      "Catalog.json": "base\\РОЗН2-2\\Catalog\\БазовыеЕдиницыИзмерения\\Catalog.json"
+    },
+    "КассыККМ": {
+      "Catalog.json": "base\\РОЗН2-2\\Catalog\\КассыККМ\\Catalog.json"
+    },
+    "Контрагенты": {
+      "Catalog.json": "base\\РОЗН2-2\\Catalog\\Контрагенты\\Catalog.json"
+    },
+    "Магазины": {
+      "Catalog.json": "base\\РОЗН2-2\\Catalog\\Магазины\\Catalog.json"
+    },
+    "Номенклатура": {
+      "Catalog.json": "base\\РОЗН2-2\\Catalog\\Номенклатура\\Catalog.json"
+    },
+    "Организации": {
+      "Catalog.json": "base\\РОЗН2-2\\Catalog\\Организации\\Catalog.json"
+    },
+    "ПодключаемоеОборудование": {
+      "Catalog.json": "base\\РОЗН2-2\\Catalog\\ПодключаемоеОборудование\\Catalog.json"
+    },
+    "РабочиеМеста": {
+      "Catalog.json": "base\\РОЗН2-2\\Catalog\\РабочиеМеста\\Catalog.json"
+    },
+    "Склады": {
+      "Catalog.json": "base\\РОЗН2-2\\Catalog\\Склады\\Catalog.json"
+    },
+    "ТоварныеГруппы": {
+      "Catalog.json": "base\\РОЗН2-2\\Catalog\\ТоварныеГруппы\\Catalog.json"
+    },
+    "УпаковкиНоменклатуры": {
+      "Catalog.json": "base\\РОЗН2-2\\Catalog\\УпаковкиНоменклатуры\\Catalog.json"
+    },
+    "ФизическиеЛица": {
+      "Catalog.json": "base\\РОЗН2-2\\Catalog\\ФизическиеЛица\\Catalog.json"
+    },
+    "ХарактеристикиНоменклатуры": {
+      "Catalog.json": "base\\РОЗН2-2\\Catalog\\ХарактеристикиНоменклатуры\\Catalog.json"
+    }
+  },
+  "ChartOfCharacteristicType": {
+    "ДополнительныеРеквизитыИСведения": {
+      "ChartOfCharacteristicType.json": "base\\РОЗН2-2\\ChartOfCharacteristicType\\ДополнительныеРеквизитыИСведения.json"
+    }
+  },
+  "CommonCommand": {
+    "Saby_ОткрытьФормуНастроек.json": "base\\CommonCommand\\Saby_ОткрытьФормуНастроек.json",
+    "Saby_ОткрытьФормуНастроек.obj.1c": "base\\CommonCommand\\Saby_ОткрытьФормуНастроек.obj.1c"
+  },
+  "CommonModule": {
+    "Saby_Сервисы_КлиентПодКонфигурацию": {
+      "CommonModule.json": "base\\РОЗН2-2\\CommonModule\\Saby_Сервисы_КлиентПодКонфигурацию\\CommonModule.json",
+      "CommonModule.obj.1c": "base\\РОЗН2-2\\CommonModule\\Saby_Сервисы_КлиентПодКонфигурацию\\CommonModule.obj.1c"
+    },
+    "Saby_Сервисы_СерверПодКонфигурацию": {
+      "CommonModule.json": "base\\РОЗН2-2\\CommonModule\\Saby_Сервисы_СерверПодКонфигурацию\\CommonModule.json",
+      "CommonModule.obj.1c": "base\\РОЗН2-2\\CommonModule\\Saby_Сервисы_СерверПодКонфигурацию\\CommonModule.obj.1c"
+    },
+    "МенеджерОборудованияКлиент": {
+      "CommonModule.json": "base\\РОЗН2-2\\CommonModule\\МенеджерОборудованияКлиент\\CommonModule.json",
+      "CommonModule.obj.1c": "base\\РОЗН2-2\\CommonModule\\МенеджерОборудованияКлиент\\CommonModule.obj.1c"
+    },
+    "Saby_Core": {
+      "CommonModule.json": "base\\CommonModule\\Saby_Core\\CommonModule.json",
+      "CommonModule.obj.1c": "base\\CommonModule\\Saby_Core\\CommonModule.obj.1c"
+    },
+    "Saby_СвойстваИДопРеквизиты_Сервер": {
+      "CommonModule.json": "base\\CommonModule\\Saby_СвойстваИДопРеквизиты_Сервер\\CommonModule.json",
+      "CommonModule.obj.1c": "base\\CommonModule\\Saby_СвойстваИДопРеквизиты_Сервер\\CommonModule.obj.1c"
+    },
+    "Saby_Сервисы_Клиент": {
+      "CommonModule.json": "base\\CommonModule\\Saby_Сервисы_Клиент\\CommonModule.json",
+      "CommonModule.obj.1c": "base\\CommonModule\\Saby_Сервисы_Клиент\\CommonModule.obj.1c"
+    },
+    "Saby_Сервисы_Сервер": {
+      "CommonModule.json": "base\\CommonModule\\Saby_Сервисы_Сервер\\CommonModule.json",
+      "CommonModule.obj.1c": "base\\CommonModule\\Saby_Сервисы_Сервер\\CommonModule.obj.1c"
+    },
+    "Saby_ФормаКлиент": {
+      "CommonModule.json": "base\\CommonModule\\Saby_ФормаКлиент\\CommonModule.json",
+      "CommonModule.obj.1c": "base\\CommonModule\\Saby_ФормаКлиент\\CommonModule.obj.1c"
+    },
+    "Saby_ФормаСервер": {
+      "CommonModule.json": "base\\CommonModule\\Saby_ФормаСервер\\CommonModule.json",
+      "CommonModule.obj.1c": "base\\CommonModule\\Saby_ФормаСервер\\CommonModule.obj.1c"
+    }
+  },
+  "ConfigurationExtension.json": "base\\РОЗН2-2\\ConfigurationExtension.json",
+  "Constant": {
+    "ИспользоватьАвтоматическиеСкидкиВПродажах.json": "base\\РОЗН2-2\\Constant\\ИспользоватьАвтоматическиеСкидкиВПродажах.json",
+    "ИспользоватьОплатуБанковскимиКредитами.json": "base\\РОЗН2-2\\Constant\\ИспользоватьОплатуБанковскимиКредитами.json",
+    "ИспользоватьОплатуПлатежнымиКартами.json": "base\\РОЗН2-2\\Constant\\ИспользоватьОплатуПлатежнымиКартами.json",
+    "ИспользоватьПодключаемоеОборудование.json": "base\\РОЗН2-2\\Constant\\ИспользоватьПодключаемоеОборудование.json",
+    "ИспользоватьРасчетыСКлиентами.json": "base\\РОЗН2-2\\Constant\\ИспользоватьРасчетыСКлиентами.json",
+    "ИспользоватьРучныеСкидкиВПродажах.json": "base\\РОЗН2-2\\Constant\\ИспользоватьРучныеСкидкиВПродажах.json",
+    "ИспользоватьСерииНоменклатуры.json": "base\\РОЗН2-2\\Constant\\ИспользоватьСерииНоменклатуры.json"
+  },
+  "DataProcessor": {
+    "SABY": {
+      "DataProcessor.json": "base\\DataProcessor\\SABY\\DataProcessor.json",
+      "DataProcessor.obj.1c": "base\\DataProcessor\\SABY\\DataProcessor.obj.1c",
+      "Form": {
+        "Настройки": {
+          "Form.json": "base\\DataProcessor\\SABY\\Form\\Настройки\\Form.json",
+          "Form.form803.json": "base\\DataProcessor\\SABY\\Form\\Настройки\\Form.form803.json",
+          "Form.obj.1c": "base\\DataProcessor\\SABY\\Form\\Настройки\\Form.obj.1c",
+          "Form.commands803.json": "base\\DataProcessor\\SABY\\Form\\Настройки\\Form.commands803.json",
+          "Form.props803.json": "base\\DataProcessor\\SABY\\Form\\Настройки\\Form.props803.json"
+        },
+        "ПоискДисконтнойКарты": {
+          "Form.json": "base\\DataProcessor\\SABY\\Form\\ПоискДисконтнойКарты\\Form.json",
+          "Form.form803.json": "base\\DataProcessor\\SABY\\Form\\ПоискДисконтнойКарты\\Form.form803.json",
+          "Form.obj.1c": "base\\DataProcessor\\SABY\\Form\\ПоискДисконтнойКарты\\Form.obj.1c",
+          "Form.commands803.json": "base\\DataProcessor\\SABY\\Form\\ПоискДисконтнойКарты\\Form.commands803.json",
+          "Form.props803.json": "base\\DataProcessor\\SABY\\Form\\ПоискДисконтнойКарты\\Form.props803.json"
+        },
+        "Вход": {
+          "Form.json": "base\\DataProcessor\\SABY\\Form\\Вход\\Form.json",
+          "Form.form803.json": "base\\DataProcessor\\SABY\\Form\\Вход\\Form.form803.json",
+          "Form.obj.1c": "base\\DataProcessor\\SABY\\Form\\Вход\\Form.obj.1c",
+          "Form.commands803.json": "base\\DataProcessor\\SABY\\Form\\Вход\\Form.commands803.json",
+          "Form.props803.json": "base\\DataProcessor\\SABY\\Form\\Вход\\Form.props803.json"
+        },
+        "ВыдачаКарты": {
+          "Form.json": "base\\DataProcessor\\SABY\\Form\\ВыдачаКарты\\Form.json",
+          "Form.form803.json": "base\\DataProcessor\\SABY\\Form\\ВыдачаКарты\\Form.form803.json",
+          "Form.obj.1c": "base\\DataProcessor\\SABY\\Form\\ВыдачаКарты\\Form.obj.1c",
+          "Form.commands803.json": "base\\DataProcessor\\SABY\\Form\\ВыдачаКарты\\Form.commands803.json",
+          "Form.props803.json": "base\\DataProcessor\\SABY\\Form\\ВыдачаКарты\\Form.props803.json",
+          "Form.elements803.json": "base\\DataProcessor\\SABY\\Form\\ВыдачаКарты\\Form.elements803.json"
+        }
+      }
+    },
+    "РМКУправляемыйРежим": {
+      "DataProcessor.json": "base\\РОЗН2-2\\DataProcessor\\РМКУправляемыйРежим\\DataProcessor.json",
+      "Form": {
+        "Форма": {
+          "Form.json": "base\\РОЗН2-2\\DataProcessor\\РМКУправляемыйРежим\\Form\\Форма\\Form.json",
+          "Form.commands803.json": "base\\РОЗН2-2\\DataProcessor\\РМКУправляемыйРежим\\Form\\Форма\\Form.commands803.json",
+          "Form.elements803.json": "base\\РОЗН2-2\\DataProcessor\\РМКУправляемыйРежим\\Form\\Форма\\Form.elements803.json",
+          "Form.form803.json": "base\\РОЗН2-2\\DataProcessor\\РМКУправляемыйРежим\\Form\\Форма\\Form.form803.json",
+          "Form.obj.1c": "base\\РОЗН2-2\\DataProcessor\\РМКУправляемыйРежим\\Form\\Форма\\Form.obj.1c",
+          "Form.props803.json": "base\\РОЗН2-2\\DataProcessor\\РМКУправляемыйРежим\\Form\\Форма\\Form.props803.json"
+        }
+      }
+    }
+  },
+  "DefinedType": {
+    "КассаБПО.json": "base\\РОЗН2-2\\DefinedType\\КассаБПО.json",
+    "ОрганизацияБПО.json": "base\\РОЗН2-2\\DefinedType\\ОрганизацияБПО.json",
+    "ОснованиеФискальнойОперацииБПО.json": "base\\РОЗН2-2\\DefinedType\\ОснованиеФискальнойОперацииБПО.json"
+  },
+  "Document": {
+    "КассоваяСмена": {
+      "Document.json": "base\\РОЗН2-2\\Document\\КассоваяСмена\\Document.json",
+      "Document.obj.1c": "base\\РОЗН2-2\\Document\\КассоваяСмена\\Document.obj.1c"
+    },
+    "ЧекККМ": {
+      "Document.json": "base\\РОЗН2-2\\Document\\ЧекККМ\\Document.json"
+    }
+  },
+  "Enum": {
+    "СтавкиНДС": {
+      "Enum.json": "base\\РОЗН2-2\\Enum\\СтавкиНДС.json"
+    },
+    "СтатусыКассовойСмены": {
+      "Enum.json": "base\\РОЗН2-2\\Enum\\СтатусыКассовойСмены.json"
+    },
+    "СтатусыЧековККМ": {
+      "Enum.json": "base\\РОЗН2-2\\Enum\\СтатусыЧековККМ.json"
+    },
+    "ТипыНоменклатуры": {
+      "Enum.json": "base\\РОЗН2-2\\Enum\\ТипыНоменклатуры.json"
+    },
+    "ТипыПодключаемогоОборудования": {
+      "Enum.json": "base\\РОЗН2-2\\Enum\\ТипыПодключаемогоОборудования.json"
+    },
+    "ТипыСистемНалогообложенияККТ": {
+      "Enum.json": "base\\РОЗН2-2\\Enum\\ТипыСистемНалогообложенияККТ.json"
+    },
+    "ТипыОплатЧекаККМ": {
+      "Enum.json": "base\\РОЗН2-2\\Enum\\ТипыОплатЧекаККМ.json"
+    },
+    "ХозяйственныеОперации": {
+      "Enum.json": "base\\РОЗН2-2\\Enum\\ХозяйственныеОперации.json"
+    },
+    "ВидыОперацийЧекККМ": {
+      "Enum.json": "base\\РОЗН2-2\\Enum\\ВидыОперацийЧекККМ.json"
+    }
+  },
+  "FunctionalOption": {
+    "ИспользоватьАвтоматическиеСкидкиВПродажах.json": "base\\РОЗН2-2\\FunctionalOption\\ИспользоватьАвтоматическиеСкидкиВПродажах.json",
+    "ИспользоватьОплатуБанковскимиКредитами.json": "base\\РОЗН2-2\\FunctionalOption\\ИспользоватьОплатуБанковскимиКредитами.json",
+    "ИспользоватьОплатуПлатежнымиКартами.json": "base\\РОЗН2-2\\FunctionalOption\\ИспользоватьОплатуПлатежнымиКартами.json",
+    "ИспользоватьПодключаемоеОборудование.json": "base\\РОЗН2-2\\FunctionalOption\\ИспользоватьПодключаемоеОборудование.json",
+    "ИспользоватьРасчетыСКлиентами.json": "base\\РОЗН2-2\\FunctionalOption\\ИспользоватьРасчетыСКлиентами.json",
+    "ИспользоватьРучныеСкидкиВПродажах.json": "base\\РОЗН2-2\\FunctionalOption\\ИспользоватьРучныеСкидкиВПродажах.json",
+    "ИспользоватьСерииНоменклатуры.json": "base\\РОЗН2-2\\FunctionalOption\\ИспользоватьСерииНоменклатуры.json"
+  },
+  "InformationRegister": {
+    "Saby_ОчередьЧеков": {
+      "InformationRegister.json": "base\\РОЗН2-2\\InformationRegister\\Saby_ОчередьЧеков\\InformationRegister.json"
+    },
+    "ДополнительныеСведения": {
+      "InformationRegister.json": "base\\РОЗН2-2\\InformationRegister\\ДополнительныеСведения\\InformationRegister.json"
+    },
+    "ПрименениеСистемНалогообложения": {
+      "InformationRegister.json": "base\\РОЗН2-2\\InformationRegister\\ПрименениеСистемНалогообложения\\InformationRegister.json"
+    },
+    "ФискальныеОперации": {
+      "InformationRegister.json": "base\\РОЗН2-2\\InformationRegister\\ФискальныеОперации\\InformationRegister.json"
+    }
+  },
+  "StyleItem": {
+    "ВыборСтандартногоПериодаФонКнопки.json": "base\\РОЗН2-2\\StyleItem\\ВыборСтандартногоПериодаФонКнопки.json",
+    "ЦветТекстаОтмененнойСтрокиДокумента.json": "base\\РОЗН2-2\\StyleItem\\ЦветТекстаОтмененнойСтрокиДокумента.json"
+  },
+  "Subsystem": {
+    "Администрирование": {
+      "Subsystem.json": "base\\РОЗН2-2\\Subsystem\\Администрирование\\Subsystem.json"
+    }
+  },
+  "Language": {
+    "Русский.json": ""
+  },
+  "version.txt": "version.txt",
+  "version.bin": "version.bin"
+}
